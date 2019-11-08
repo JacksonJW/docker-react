@@ -7,4 +7,5 @@ RUN npm run build
 # build files will then be located in usr/app/build
 
 FROM nginx
+EXPOSE 80
 COPY --from=builder /usr/app/build /usr/share/nginx/html
