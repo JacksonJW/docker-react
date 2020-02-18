@@ -7,6 +7,8 @@ before_install:
 
 script:
   - docker run -e CI=true jacksonjw/docker-react npm run test
+# For deploying application to AWS
+#
 # deploy:
 #   provider: elasticbeanstalk
 #   region: "us-west-1"
